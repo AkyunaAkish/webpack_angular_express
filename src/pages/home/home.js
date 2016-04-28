@@ -11,7 +11,7 @@ export default class HomeController{
     this.title = this.newTitle;
     this.newTitle = null;
 
-    this.http.get('../../api/v1/test').then(function(res){
+    this.http.get('/api/v1/test').then(function(res){
       this.log('res', res);
     });
 
